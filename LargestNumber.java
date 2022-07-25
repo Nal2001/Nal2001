@@ -3,18 +3,17 @@ import java.util.Scanner;
 public class LargestNumber {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
-        int num1=input.nextInt();
-        int num2=input.nextInt();
+        System.out.print("Enter two numbers:");
+        int num1=input.nextInt(), num2=input.nextInt(),num3=input.nextInt();
+        int max=num1;
         if(num1>num2){
-            System.out.println("Number 1 is the largest:");
+            max=num2;
         
         }
-        else if(num1==num2){
-        System.out.println("Both the numbers are equal:");
+        if(num3>max){
+        max=num3;
         }
-        else{
-            System.out.println("The number");
-        }
+        System.out.println(max);
     }
     
 }
